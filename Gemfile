@@ -5,6 +5,7 @@ ruby '2.6.5'
 
 # Bundle edge Rails instead:  'rails', github: 'rails/rails'
  'rails', '~> 6.0.2', '>= 6.0.2.2'
+ 'sqlite3', '~> 1.4'
 # Use Puma as the app server
  'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -44,9 +45,9 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
    'webdrivers'
 end
- group :production do
-  gem 'pg' 
-  end
+#  group :production do
+#   gem 'pg' 
+#   end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data 
  'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
